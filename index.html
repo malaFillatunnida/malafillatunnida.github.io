@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Malafilla - Perosonal Blog Website</title>
+    <meta name="title" content="Wren - Perosonal Blog Website" />
+    <meta
+      name="description"
+      content="This is a blog html template made by codewithsadee"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/pattern-2.svg" />
+    <link rel="preload" as="image" href="./assets/images/pattern-3.svg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#home" class="logo">
+          <h2 class="headline section-title">Malafilla.</h2>
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="119"
+                height="37"
+                alt="Wren logo"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link hover-1" data-nav-toggler
+                >Beranda</a
+              >
+            </li>
+
+            <li>
+              <a href="#tentang" class="navbar-link hover-1" data-nav-toggler
+                >Tentang</a
+              >
+            </li>
+
+            <li>
+              <a href="#latarbelakang" class="navbar-link hover-1" data-nav-toggler
+                >Latar Belakang</a
+              >
+            </li>
+
+            <li>
+              <a href="#portofolio" class="navbar-link hover-1" data-nav-toggler
+                >Portofolio</a
+              >
+            </li>
+
+            <li>
+              <a href="#kontak" class="navbar-link hover-1" data-nav-toggler
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HOME
+      -->
+
+        <section class="hero" id="home" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">Halo semuanya!</p>
+
+              <h1 class="headline headline-1 section-title">
+                Saya <span class="span">Mala Fillatunnida</span>
+              </h1>
+
+              <p class="hero-text">
+                Saya seorang Junior Developer yang sangat antusias dan
+                bersemangat untuk terus belajar di bidang teknologi dan
+                pemrograman. Dari segi pengalaman, mungkin masih belum terlalu
+                banyak karena bisa dibilang saya masih pendatang baru. Namun,
+                saya berharap dapat bergabung dengan perusahaan teknologi yang
+                dapat mendukung pengembangan kemampuan saya dan memberikan
+                peluang untuk tumbuh menjadi seorang programmer yang handal.
+              </p>
+
+              <!-- <div class="input-wrapper">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Type your email address"
+                  required
+                  class="input-field"
+                  autocomplete="off"
+                />
+
+                <button class="btn btn-primary">
+                  <span class="span">Subscribe</span>
+
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </button>
+              </div> -->
+            </div>
+
+            <div class="hero-banner">
+              <img
+                src="./assets/images/hero-banner-2.png"
+                width="327"
+                height="490"
+                alt="Wren Clark"
+                class="w-100"
+              />
+
+              <img
+                src="./assets/images/pattern-2.svg"
+                width="27"
+                height="26"
+                alt="shape"
+                class="shape shape-1"
+              />
+
+              <img
+                src="./assets/images/pattern-3.svg"
+                width="27"
+                height="26"
+                alt="shape"
+                class="shape shape-2"
+              />
+            </div>
+
+            <img
+              src="./assets/images/shadow-1.svg"
+              width="500"
+              height="800"
+              alt=""
+              class="hero-bg hero-bg-1"
+            />
+
+            <img
+              src="./assets/images/shadow-2.svg"
+              width="500"
+              height="500"
+              alt=""
+              class="hero-bg hero-bg-2"
+            />
+          </div>
+        </section>
+        <br>
+
+        <!-- 
+        - #TENTANG
+      -->
+
+        <section class="topics" id="tentang" aria-labelledby="topic-label">
+          <div class="container">
+            <div class="card topic-card">
+              <div class="card-content">
+                <h2
+                  class="headline headline-2 section-title card-title"
+                  id="topic-label"
+                >
+                  Tentang
+                </h2>
+
+                <p class="card-text">
+                  Bahasa pemrograman yang saya pelajari dan kuasai meliputi...
+                </p>
+
+                <div class="btn-group">
+                  <button
+                    class="btn-icon"
+                    aria-label="previous"
+                    data-slider-prev
+                  >
+                    <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                  </button>
+
+                  <button class="btn-icon" aria-label="next" data-slider-next>
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="slider" data-slider>
+                <ul class="slider-list" data-slider-container>
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/logo-html.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="HTML"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">HTML</span>
+                        <!-- <p class="slider-subtitle">63 Articles</p> -->
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/logo-css.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="CSS"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">CSS</span>
+                        <!-- <p class="slider-subtitle">78 Articles</p> -->
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/logo-js.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="Javascript"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Javascript</span>
+                        <!-- <p class="slider-subtitle">38 Articles</p> -->
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/logo-java.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="Java"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Java</span>
+                        <!-- <p class="slider-subtitle">125 Articles</p> -->
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/logo-react.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="React js"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">React js</span>
+                        <!-- <p class="slider-subtitle">78 Articles</p> -->
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/logo-nodejs.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="Node js"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">Node js</span>
+                        <!-- <p class="slider-subtitle">78 Articles</p> -->
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+                      <figure
+                        class="slider-banner img-holder"
+                        style="--width: 507; --height: 618"
+                      >
+                        <img
+                          src="./assets/images/logo-php.png"
+                          width="507"
+                          height="618"
+                          loading="lazy"
+                          alt="PHP"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <div class="slider-content">
+                        <span class="slider-title">PHP</span>
+                        <!-- <p class="slider-subtitle">78 Articles</p> -->
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #LATAR BELAKANG
+      -->
+
+        <section class="section feature" aria-label="feature" id="latarbelakang">
+          <div class="container">
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Latar Belakang</span>
+            </h2>
+
+            <p class="section-text headline">Pendidikan Formal</p>
+
+              <div class="tags" aria-labelledby="tag-label">
+                <ul class="grid-list">
+                  <li>
+                    <div class="card tag-btn" style="text-align: center;">
+                      <h4 ><span class="headline"> 2010 - 2012 </span><br>
+                        TK KARTIKA SARI</h4>
+                      </div>
+                  </li>
+
+                  <li>
+                    <div class="card tag-btn" style="text-align: center;">
+                      <h4 ><span class="headline"> 2012 - 2018 </span><br>
+                        MI AL - HAMIDIYYAH</h4>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="card tag-btn" style="text-align: center;">
+                      <h4 ><span class="headline"> 2018 - 2021 </span><br>
+                        SMP N 1 PANCUR</h4>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="card tag-btn" style="text-align: center;">
+                      <h4 ><span class="headline"> 2021 - 2024 </span><br>
+                        SMK BINA NUSANTARA DEMAK</h4>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="card tag-btn" style="text-align: center;">
+                      <h4 ><span class="headline"> SEKARANG </span><br>
+                        UNIVERSITAS WAHID HASYIM SEMARANG
+                      </h4>
+                    </div>
+                  </li>
+      
+                </ul>
+              </div>
+            <br>      
+            <br>    
+            
+            <p class="section-text headline">Pendidikan Non Formal</p>
+
+            <ul class="feature-list">
+              <li>
+                <div class="card feature-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 1602; --height: 903"
+                  >
+                    <img
+                      src="./assets/images/logo-edu-1.png"
+                      width="1602"
+                      height="903"
+                      loading="lazy"
+                      alt="Self-observation is the first step of inner unfolding"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <br />
+                  <div class="card-content">
+                    <h3 class="headline headline-3" style="text-align: center">
+                      <a class="card-title hover-2">
+                        Forum Pengembangan Bootcamp Binus
+                      </a>
+                    </h3>
+                    <br />
+                    <h4
+                      class="headline headline-4 card-title"
+                      style="text-align: center"
+                    >
+                      Junior Developer <br />
+                      Oktober 2021 - Maret 2022
+                    </h4>
+                    <br />
+                    <p>
+                      Selama bootcamp ini, saya belajar banyak tentang
+                      pemrograman dasar. Selain itu, saya juga belajar
+                      mempraktikkan komunikasi saya di lingkungan tersebut.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card feature-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 1602; --height: 903"
+                  >
+                    <img
+                      src="./assets/images/logo-edu-2.png"
+                      width="1602"
+                      height="903"
+                      loading="lazy"
+                      alt="Self-observation is the first step of inner unfolding"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <br />
+                  <div class="card-content">
+                    <h3 class="headline headline-3" style="text-align: center">
+                      <a class="card-title hover-2">
+                        Magang di G2 Academy Jakarta
+                      </a>
+                    </h3>
+                    <br />
+                    <h4
+                      class="headline headline-4 card-title"
+                      style="text-align: center"
+                    >
+                      Web Developer <br />
+                      Maret - Mei 2022
+                    </h4>
+                    <br />
+                    <p>
+                      Saya bertanggung jawab membuat website blog g2 academy di
+                      sisi klien sesuai dengan tugas dan arahan dari instruktur.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card feature-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 1602; --height: 903"
+                  >
+                    <img
+                      src="./assets/images/logo-edu-3.png"
+                      width="1602"
+                      height="903"
+                      loading="lazy"
+                      alt="Self-observation is the first step of inner unfolding"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <br />
+                  <div class="card-content">
+                    <h3 class="headline headline-3" style="text-align: center">
+                      <a class="card-title hover-2">
+                        Bootcamp WMD G2 Academy Jakarta
+                      </a>
+                    </h3>
+                    <br />
+                    <h4
+                      class="headline headline-4 card-title"
+                      style="text-align: center"
+                    >
+                    Fullstack Developer <br>
+                    Mei - Oktober 2022
+                    </h4>
+                    <br />
+                    <p>
+                      Selalu disiplin dalam rapat dan pengumpulan tugas, serta menyelesaikan proyek mini aplikasi restoran fullstack di akhir bootcamp.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card feature-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 1602; --height: 903"
+                  >
+                    <img
+                      src="./assets/images/logo-edu-4.png"
+                      width="1602"
+                      height="903"
+                      loading="lazy"
+                      alt="Self-observation is the first step of inner unfolding"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <br />
+                  <div class="card-content">
+                    <h3 class="headline headline-3" style="text-align: center">
+                      <a class="card-title hover-2">
+                        Magang di PT Bisnisin Asia
+                      </a>
+                    </h3>
+                    <br />
+                    <h4
+                      class="headline headline-4 card-title"
+                      style="text-align: center"
+                    >
+                    Mobile Developer
+                    <br>
+                    Agustus 2023 - Agustus 2024
+                    </h4>
+                    <br />
+                    <p>
+                      Saya bertanggung jawab mengembangkan aplikasi seluler berbasis React Native yang digunakan untuk mendukung registrasi jamaah umrah.
+                    </p>
+                  </div>
+                </div>
+              </li> 
+            </ul>
+        </section>
+
+        <!-- 
+        - #PORTOFOLIO
+      -->
+
+      <section class="section feature" aria-label="feature" id="portofolio">
+        <div class="container">
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Portofolio</span>
+          </h2>  
+          <br>
+          <!-- <p class="section-text headline">Pendidikan Non Formal</p> -->
+
+          <ul class="feature-list">
+            <li>
+              <div class="card feature-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 1602; --height: 903"
+                >
+                  <img
+                    src="./assets/images/logo-porto-1.png"
+                    width="1602"
+                    height="903"
+                    loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <br />
+                <div class="card-content">
+                  <h3 class="headline headline-3" style="text-align: center">
+                    <a class="card-title hover-2">
+                      Web Blog G2 Academy
+                    </a>
+                  </h3>
+                  <br>
+                  <p style="text-align: center;">https://github.com/ <br>malaFillatunnida/finally_front end_blog</p> 
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 1602; --height: 903"
+                >
+                  <img
+                    src="./assets/images/logo-porto-2.png"
+                    width="1602"
+                    height="903"
+                    loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <br />
+                <div class="card-content">
+                  <h3 class="headline headline-3" style="text-align: center">
+                    <a class="card-title hover-2">
+                      Book Store App
+                    </a>
+                  </h3>
+                  <br>
+                  <p style="text-align: center;">https://gitlab.com/book-store-app2</p> 
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 1602; --height: 903"
+                >
+                  <img
+                    src="./assets/images/logo-porto-3.png"
+                    width="1602"
+                    height="903"
+                    loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <br />
+                <div class="card-content">
+                  <h3 class="headline headline-3" style="text-align: center">
+                    <a class="card-title hover-2">
+                      Resto App
+                    </a>
+                  </h3>
+                  <br>
+                  <p style="text-align: center;">https://gitlab.com/restaurant-app3</p> 
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 1602; --height: 903"
+                >
+                  <img
+                    src="./assets/images/logo-porto-4.png"
+                    width="1602"
+                    height="903"
+                    loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <br />
+                <div class="card-content">
+                  <h3 class="headline headline-3" style="text-align: center">
+                    <a class="card-title hover-2">
+                      SIS ( Sistem Informasi Sekolah )
+                    </a>
+                  </h3>
+                  <br>
+                  <p style="text-align: center;">https://gitlab.com/ <br>sistem_informasi_sekolah/sis</p> 
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 1602; --height: 903"
+                >
+                  <img
+                    src="./assets/images/logo-porto-5.png"
+                    width="1602"
+                    height="903"
+                    loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <br />
+                <div class="card-content">
+                  <h3 class="headline headline-3" style="text-align: center">
+                    <a class="card-title hover-2">
+                      Zamzam Partner Mobile
+                    </a>
+                  </h3>
+                  <br>
+                  <p style="text-align: center;">https://github.com/ <br>yauritux/zamzam-partner-mobile/</p> 
+                </div>
+              </div>
+            </li>
+
+      </section>
+
+        <!-- 
+        - #KONTAK
+      -->
+
+        <section
+          class="section recent-post"
+          id="kontak"
+          aria-labelledby="recent-label"
+        >
+          <div class="container">
+            <div class="post-main">
+              <h2 class="headline headline-2 section-title">
+                <span class="span">Kontak</span>
+              </h2>
+
+              <p class="section-text">Punya pertanyaan?</p>
+
+              <ul class="grid-list">
+                <li>
+                  <div class="recent-post-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 271; --height: 258"
+                    >
+                      <!-- <img
+                        src="./assets/images/recent-post-1.jpg"
+                        width="271"
+                        height="258"
+                        loading="lazy"
+                        alt="Helpful Tips for Working from Home as a Freelancer"
+                        class="img-cover"
+                      /> -->
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7924.725840390895!2d111.45898!3d-6.725496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e772289dee8fa2b%3A0xe98787132491c1f!2sRopoh%2C%20Pancur%2C%20Kec.%20Pancur%2C%20Kabupaten%20Rembang%2C%20Jawa%20Tengah%2C%20Indonesia!5e0!3m2!1sid!2sus!4v1735824059989!5m2!1sid!2sus" width="271" height="258" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+
+                    <div class="card-content">
+                      <!-- <a href="#" class="card-badge">Working Tips</a> -->
+
+                      <h3 class="headline headline-3 card-title">
+                        <a href="#" class="link hover-2"
+                          >Jangan Ragu Untuk Menghubungi !</a
+                        >
+                      </h3>
+
+                      <p class="card-text">
+                        Hubungi saya untuk memulai percakapan baru. Setiap pesan adalah langkah pertama menuju ide-ide besar.
+                      </p>
+
+                      <div class="card-wrapper">
+
+                        <ul class="social-list">
+                          <li>
+                            <a href="#" class="social-link">
+                              <ion-icon name="logo-whatsapp"></ion-icon>
+            
+                              <span class="span">WhatsApp</span>
+                            </a>
+                          </li>
+            
+                          <li>
+                            <a href="#" class="social-link">
+                              <ion-icon name="logo-linkedin"></ion-icon>
+            
+                              <span class="span">LinkedIn</span>
+                            </a>
+                          </li>
+            
+                          <li>
+                            <a href="#" class="social-link">
+                              <ion-icon name="logo-instagram"></ion-icon>
+            
+                              <span class="span">Instagram</span>
+                            </a>
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer>
+      <div class="container">
+        <div class="card footer">
+          <div class="section footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                  <h2 class="headline section-title">Malafilla.</h2>
+                </a>
+              </a>
+
+              <p class="footer-text">
+                Semua perjalanan dimulai dengan satu langkah kecil yang bermakna. <br> 
+                ( Mala Fillatunnida )
+              </p>
+
+              <p class="footer-list-title">Alamat</p>
+
+              <address class="footer-text address">
+                Desa Pancur Kec. Pancur <br />
+                Kabupaten Rembang, Jawa Tengah Indonesia
+              </address>
+            </div>
+
+            <div class="footer-list">
+              <p class="footer-list-title">Kategori</p>
+
+              <ul>
+                <li>
+                  <a href="#home" class="footer-link hover-2">Beranda</a>
+                </li>
+
+                <li>
+                  <a href="#tentang" class="footer-link hover-2">Tentang</a>
+                </li>
+
+                <li>
+                  <a href="#latarbelakang" class="footer-link hover-2">Latar Belakang</a>
+                </li>
+
+                <li>
+                  <a href="#portofolio" class="footer-link hover-2">Portofolio</a>
+                </li>
+
+                <li>
+                  <a href="#kontak" class="footer-link hover-2">Kontak</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-list">
+              <p class="footer-list-title">Punya Pertanyaan?</p>
+
+              <p class="footer-text">
+                Hubungi saya untuk memulai percakapan baru. Setiap pesan adalah langkah pertama menuju ide-ide besar.
+              </p>
+
+              <ul>
+                <li>
+                  <a href="#home" class="footer-link hover-2 social-link">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+  
+                    <span class="span">WhatsApp</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#tentang" class="footer-link hover-2 social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+  
+                    <span class="span">LinkedIn</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#featured" class="footer-link hover-2 ">
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+    
+                      <span class="span">Instagram</span>
+                    </a>  
+                  </a>
+                </li>
+              </ul>
+  
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="copyright">
+              &copy; Developed by
+              <a href="#" class="copyright-link">malafillatunnida.</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
